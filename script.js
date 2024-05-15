@@ -170,3 +170,45 @@ function toggleColorSample() {
 }
 
 
+document.addEventListener('DOMContentLoaded', function() {
+  // Get the overlay and buttons
+  var overlay = document.getElementById('overlay');
+  var openBtn = document.getElementById('openOverlayBtn');
+  var closeBtn = document.getElementById('closeOverlayBtn');
+
+  // Open the overlay when the open button is clicked
+  openBtn.addEventListener('click', function() {
+    overlay.style.display = 'block';
+  });
+
+  // Close the overlay when the close button is clicked
+  closeBtn.addEventListener('click', function() {
+    overlay.style.display = 'none';
+  });
+
+  // Close the overlay when clicking outside the overlay content
+  window.addEventListener('click', function(event) {
+    if (event.target === overlay) {
+      overlay.style.display = 'none';
+    }
+  });
+
+  // Prevent the overlay from closing when clicking inside the overlay content
+  document.getElementById('overlay').addEventListener('click', function(event){
+    event.stopPropagation();
+  });
+
+  // Handle form submission
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+    // Here you can add code to handle form submission, such as sending the data to a server
+    // For demonstration purposes, we'll just log the form data
+    var formData = new FormData(this);
+    console.log('Form data:', formData);
+    // Close the overlay
+    overlay.style.display = 'none';
+  });
+});
+
+  // Add click event listener to overlay to close it when clicked outside
+  overlay.addEventListener("click", closeOverlay);
