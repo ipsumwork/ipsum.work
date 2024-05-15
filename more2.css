@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "PLACE";
+  src: url(https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/PLACE?v=1715433488062);
+}
+
+.contact{
+    color: #6a6a6a;
+    background-color: black;
+}
+#darkModeCheckbox{
+  
+  appearance: none;
+  position: fixed;
+  top: 100px; /* Adjust the top position as needed */
+  right: 20px; /* Adjust the right position as needed */
+  width: 16px;
+  height: 16px;
+  border: none;
+  border-radius: 50%;
+  background: conic-gradient(black 50%, white 50%);
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+  transform: rotate(45deg);
+ 
+}
+
+#darkModeCheckbox:hover {
+  transform: rotate(-180deg);
+}
+.linksborder{
+  font-family: "PLACE";
+  font-size: 12px;
+  margin-top:-150px;
+  margin-left: 300px;
+  position: fixed;
+  height: 250px;
+
+  
+}
+
+.info{
+  font-family: "PLACE";
+  width: 130px;
+  height: 30px;
+ 
+  
+}
+
+.social{
+  margin: 200px;
+}
+
+.instagram {
+  font-family: "PLACE";
+  position: relative;
+  font-size: 10px;
+  text-decoration: none;
+  display: inline-block; 
+  font-size: 12px;
+  transition: transform 0.3s ease;
+  color: black;
+}
+
+.instagram:hover {
+  transform: translateX(5px);
+}
+
+.dark-mode .instagram {
+  color: white;
+}
+.www{
+  margin-top: -300px;
+  margin-left: 700px;
+}
+.website{
+  font-family: "PLACE";
+  position: relative;
+  font-size: 10px;
+  text-decoration: none;
+  display: inline-block; 
+  font-size: 12px;
+  transition: transform 0.3s ease;
+  color: black;
+}
+
+.website:hover {
+  transform: translateX(5px);
+}
+
+.dark-mode .website {
+  color: white;
+}

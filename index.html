@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="typetester1.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/Necto mono?v=1698348071538"
+      crossorigin="anonymous"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <link
+      href="https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/roboto flex?v=1698354286479"
+    />
+    <link
+      href="https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/tiny?v=1698348044367"
+    />
+    <link
+      href="https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/General Sans?v=1698401282395"
+    />
+    <script src="script.js"></script>
+ <div class="preview">
+            <a
+              id="preview"
+              >(PREVIEW MODE)</a
+            >
+             <a
+              id="available"
+              >AVAILABLE FOR DOWNLOAD (VERY) SOON</a
+            >
+          </div>
+    <div class="header">
+            <a
+              class="header-text"
+              href="/index.html"
+              onclick="location.reload();"
+              >00. W0RK.IPSUM</a
+            >
+          </div>
+          <div class="about">
+            <a
+              class="about-text"
+              href="/about.html"
+              onclick="location.reload();"
+              >01. ABOUT</a
+            >
+          </div>
+          <div class="about">
+            <a class="about-text" href="/more2.html" onclick="location.reload();"
+              >03. CONTACT</a
+            >
+          </div>
+          <div class="about">
+            <a
+              class="about-text"
+              href="/more2.html"
+              onclick="location.reload();"
+              >04. MORE</a
+            >
+          </div>
+    <div class="fixed-container">
+      <div class="scrollable-content">
+        <div class="header-container">
+         
+          <div class="Empty"></div>
+          <div class="button-container">
+            <a
+              onclick="toggleDarkMode()"
+              id="darkModeCheckbox"
+              class="custom-button"
+            ></a>
+
+            <a onclick="toggleColorSample()" id="ABC" class="color"></a>
+
+            <button id="resetButton" onclick="location.reload();">RESET</button>
+          </div>
+        </div>
+        <div class="air" id="air"></div>
+        <div class="typetester" id="Typetester1">
+          <select onchange="updateFont(this.value, 'Typetester1')">
+            <option value="PLACE">PLACE MONO</option>
+          </select>
+          SIZE:
+          <input
+            type="range"
+            id="size1"
+            min="10"
+            max="400"
+            value="200"
+            oninput="updateSizeAndLineHeight(this.value, 'Typetester1', 'sizeValue1')"
+            class="slider"
+          />
+          <span id="sizeValue1">200</span>
+
+          WEIGHT:
+          <input
+            type="range"
+            id="weight1"
+            min="100"
+            max="900"
+            value="400"
+            oninput="updateWeight(this.value, 'Typetester1', 'weightValue1')"
+            class="slider"
+          />
+          <span id="weightValue1">400</span>
+
+          <div class="sample" contenteditable="true">(PROPERTY TYPOGRAPHY)</div>
+          [ID 1709819978429]
+          <button class="readmore" onclick="location.reload();">MORE</button>
+
+          <a class="Download" href="path/to/your/font-file.ttf" download>GET</a>
+        </div>
+        <div class="typetester" id="Typetester2">
+          <select onchange="updateFont(this.value, 'Typetester2')">
+            <option value="Holes">HOLES</option>
+          </select>
+          SIZE:
+          <input
+            type="range"
+            id="size2"
+            min="10"
+            max="400"
+            value="200"
+            oninput="updateSizeAndLineHeight(this.value, 'Typetester2', 'sizeValue2')"
+            class="slider"
+          />
+          <span id="sizeValue2">200</span>
+
+          WEIGHT:
+          <input
+            type="range"
+            id="weight2"
+            min="100"
+            max="900"
+            value="400"
+            oninput="updateWeight(this.value, 'Typetester2', 'weightValue2')"
+            class="slider"
+          />
+          <span id="weightValue2">400</span>
+
+          <div class="sample" contenteditable="true">PX.30</div>
+          [ID:1709820171430]
+          <button class="readmore" onclick="location.reload();">MORE</button>
+          <a class="Download" href="path/to/your/font-file.ttf" download>GET</a>
+        </div>
+
+        <div class="typetester" id="Typetester3">
+          <select onchange="updateFont(this.value, 'Typetester3')">
+            <option value="General Sans">FORSLA</option>
+          </select>
+          SIZE:
+          <input
+            type="range"
+            id="size3"
+            min="10"
+            max="400"
+            value="200"
+            oninput="updateSizeAndLineHeight(this.value, 'Typetester3', 'sizeValue3')"
+            class="slider"
+          />
+          <span id="sizeValue3">200</span>
+
+          <span id="height3">100</span>
+
+          ITALIC:
+          <input
+            type="range"
+            id="italicSlider3"
+            min="100"
+            max="900"
+            value="100"
+            oninput="updateItalic(this.value, 'Typetester3', 'italic3')"
+            class="slider"
+          />
+          <span id="italic3">100</span>
+
+          SLANT:
+          <input
+            type="range"
+            id="slantSlider3"
+            min="100"
+            max="900"
+            value="100"
+            oninput="updateSlant(this.value, 'Typetester3', 'slant3')"
+            class="slider"
+          />
+          <span id="slant3">100</span>
+          O/S:
+          <input
+            type="range"
+            id="OS3"
+            min="100"
+            max="900"
+            value="100"
+            oninput="updateOpticalsize(this.value, 'Typetester3', 'osValue3')"
+            class="slider"
+          />
+          <span id="osValue3">100</span>
+
+          HEIGHT:
+          <input
+            type="range"
+            id="relativeSlider3"
+            min="100"
+            max="900"
+            value="100"
+            oninput="updateRelativexadvance(this.value, 'Typetester3', 'height3')"
+            class="slider"
+          />
+
+          <div class="sample" contenteditable="true">FORWARD—SLANTED</div>
+          [ID:1713443852670]
+          <button class="readmore" onclick="location.reload();">MORE</button>
+          <a class="Download" href="path/to/your/font-file.ttf" download>GET</a>
+        </div>
+
+        <div class="footer">
+          Copyright © 2022 — 2024 WORK.IPSUM. All rights reserved.
+        </div>
+      </div>
+    </div>
+
+    <div class="rectangle"></div>
+  </body>
+</html>
