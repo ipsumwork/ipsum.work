@@ -136,7 +136,7 @@
   width: 400px; /* Set the width of the overlay */
   height: 400px; /* Set the height of the overlay */
   padding: 0px; /* Add padding as needed */
-  background-color: white; /* Set the background color */
+  background-color: grey; /* Set the background color */
   display: none; /* Hide by default */
   z-index: 1; /* Ensure the overlay is on top of other content */
   border: 1px solid black;
