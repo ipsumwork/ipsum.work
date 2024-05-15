@@ -107,3 +107,94 @@
   animation: moveRightToLeft 5s  linear infinite;
 }
 
+/* Style the button */
+#openOverlayBtn {
+  font-family: "PLACE"; 
+  color: #6a6a6a;
+  width: 20vh;
+  display: block;
+  line-height: normal;
+  background-color: none;
+  justify-content: left;
+  align-items: left;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 0px;
+  margin-bottom: -1px;
+  z-index: 1;
+  background-color: black;
+  border: none;
+}
+
+/* Style the overlay */
+.overlay {
+  font-family: "PLACE";
+  position: fixed;
+  top: 50%; /* Position the top of the overlay at the middle of the viewport */
+  left: 50%; /* Position the left of the overlay at the middle of the viewport */
+  transform: translate(-50%, -50%); /* Center the overlay horizontally and vertically */
+  width: 400px; /* Set the width of the overlay */
+  height: 400px; /* Set the height of the overlay */
+  padding: 0px; /* Add padding as needed */
+  background-color: white; /* Set the background color */
+  display: none; /* Hide by default */
+  z-index: 1; /* Ensure the overlay is on top of other content */
+  border: 1px solid black;
+}
+
+/* Style the overlay content */
+.overlay-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0px;
+  padding: 0px;
+  width: 300px; /* Set the width of the overlay */
+  height: 300px;
+  align-items: left;
+
+}
+#name{
+  padding: 10px;
+  margin-bottom: 5px;
+  margin-left: 15px;
+  width: 150px;
+  border: 1px solid black;
+}
+#email{
+  padding: 10px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  width: 150px;
+  border: 1px solid black;
+}
+#message{
+  padding: 10px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  border: 1px solid black;
+  
+}
+
+#submit{
+  font-family: "PLACE";
+  border: 1px solid black;
+  background: none;
+   padding: 10px;
+  position: absolute;
+  margin-left: 10px;
+  }
+
+/* Style the close button */
+.close {
+  position: absolute;
+  top: -40px;
+  right: -30px;
+  cursor: pointer;
+
+}
+
+.close:hover {
+  color: #6a6a6a;
+}
