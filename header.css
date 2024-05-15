@@ -155,21 +155,21 @@
   align-items: left;
 
 }
-#name{
+.name{
   padding: 10px;
   margin-bottom: 5px;
   margin-left: 15px;
   width: 150px;
   border: 1px solid black;
 }
-#email{
+.email{
   padding: 10px;
   margin-bottom: 5px;
   margin-left: 5px;
   width: 150px;
   border: 1px solid black;
 }
-#message{
+.message{
   padding: 10px;
   margin-bottom: 5px;
   margin-left: 5px;
@@ -177,7 +177,7 @@
   
 }
 
-#submit{
+.submit{
   font-family: "PLACE";
   border: 1px solid black;
   background: none;
