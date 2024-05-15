@@ -1,0 +1,346 @@
+
+@font-face {
+  font-family: "Holes";
+  src: url(https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/Holes?v=1708209436785);
+}
+
+@font-face {
+  font-family: "PLACE";
+  src: url(https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/PLACE?v=1715433488062);
+}
+@font-face {
+  font-family: "FORSLA";
+  src: url(https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/FORSLA?v=1713443852670);
+}
+.fixed-container {
+  position: fixed;
+  top: 0;
+  left: 0; 
+  height: 100%; 
+  background-color: none;
+  
+}
+
+.scrollable-content {
+  max-height: 610px; 
+  padding: 180px;
+  padding-top: 20px;
+  width: 900px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: center;
+}
+body {
+  background-color: ;
+  margin: 0; 
+  padding: 0;
+  max-width: 100%;
+  
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+.color{
+
+  background-color: black;
+  top: 260px; 
+}
+
+.dark-mode.color{
+  background-color: white;
+}
+.button-container{
+  position: fixed;
+  top: 250px;
+  right: 50px; 
+  z-index: 6; 
+
+}
+#ABC{
+  appearance: none;
+  position: fixed;
+  top: 260px; 
+  right: 20px; 
+  border: none;
+  right:90px;
+  font-family: "PLACE";
+  font-weight: Regular;
+  cursor: pointer;
+  user-select: none;
+  width: 12px;
+  height: 12px;  
+
+  }
+
+#ABC:hover{
+  font-weight: Bold;
+}
+
+#resetButton{
+  position: fixed;
+  top: 260px; 
+  right: 50px; 
+  border: none;
+  margin-right: 70px;
+  font-family: "PLACE";
+  font-weight: Regular;
+  font-size: 12px;
+  cursor: pointer;
+  user-select: none;
+  height: 15px;
+  background-color: transparent;
+  mix-blend-mode: difference;
+  color: #6a6a6a;
+  }
+
+#resetButton:hover{
+  font-weight: Bold;
+  color:black;
+   mix-blend-mode: difference;
+}
+.dark-mode #resetButton:hover{
+    font-weight: Bold;
+  color:white;
+   mix-blend-mode: difference;
+}
+#darkModeCheckbox {
+  appearance: none;
+  position: fixed;
+  top: 260px;
+  right: 50px; 
+  width: 13px;
+  height: 13px;
+  border: none;
+  border-radius: 50%;
+  background: conic-gradient(black 50%, white 50%);
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+  transform: rotate(45deg);
+
+ 
+}
+
+#darkModeCheckbox:hover {
+  transform: rotate(-180deg);
+}
+
+
+select {
+  -webkit-appearance: none;
+  position: static;
+  outline: none;
+  background-color: transparent;
+  color: #6a6a6a;
+  font-size: 12px;
+  text-indent: 5px;
+  border: none;
+  width: 100px;
+  margin-right: 30px;
+  margin-top: 20px;
+  bottom: 0px;
+
+}
+
+.typetester {
+  width: calc(90% - 2px); 
+  font-size: 10px;
+  font-style: normal;
+  text-align: center;
+  font-family: "PLACE";
+  color: #6a6a6a;
+  border: none;
+  margin-top: 20px;
+  position: static;
+  z-index: 3;
+  padding: 1px; 
+  box-sizing: border-box; 
+  position: relative;
+}
+
+.typetester::before,
+.typetester::after {
+  content: '';
+  position: absolute;
+  width: 8px; 
+  height: 8px;
+  background-color: black;
+}
+
+.typetester::before {
+  top: -1px;
+  left: -1px;
+}
+
+.typetester::after {
+  top: -1px;
+  right: -1px;
+}
+
+.typetester::before,
+.typetester::after,
+.typetester::before::before,
+.typetester::before::after,
+.typetester::after::before,
+.typetester::after::after {
+  content: '';
+  position: absolute;
+  width: 2px; 
+  height: 2px;
+  background-color: black;
+}
+
+.typetester::before::before {
+  top: -1px;
+  left: -1px;
+}
+
+.typetester::before::after {
+  bottom: -1px;
+  left: -1px;
+}
+
+.typetester::after::before {
+  top: -1px;
+  right: -1px;
+}
+
+.typetester::after::after {
+  bottom: -1px;
+  right: -1px;
+}
+.slider {
+  -webkit-appearance: none;
+  position: start;
+  top: 2px;
+  border: 1px solid #6a6a6a;
+  width: 150px;
+  height: 0px;
+  border-radius: 50px;
+  background-color: transparent;
+  outline: none;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  vertical-align:middle;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 0%;
+  border: 1px solid #6a6a6a;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+
+
+
+.dark-mode .slider::-webkit-slider-thumb {
+  background-color: black;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  background-color: #6a6a6a;
+}
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.sample {
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  margin-top: 15px;
+  outline: none;
+  font-size: 50px;
+  line-height: 100px;
+  background-color: transparent;
+  transition: font-weight 0.15s ease-in-out;
+  color: black;
+}
+
+.sample.dark-mode {
+  color: white;
+}
+
+.sample[contenteditable="true"] {
+  outline: none;
+  cursor: text;
+}
+
+#Typetester1 .sample {
+  font-family: "PLACE";
+  border-radius: 0px;
+}
+
+#Typetester2 .sample {
+  font-family: "Holes";
+  border-radius: 0px;
+}
+
+
+#Typetester3 .sample {
+  font-family: "FORSLA";
+  font-variation-settings: 'slnt' 100, 'opsz' 400; 
+  font-variation-settings: 'ital' 100, 'opsz' 400; 
+  font-size: 100px; /* Default font size */
+
+}
+
+.slider-group {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 10px; 
+}
+
+.readmore{
+  font-family: "PLACE";
+  border: none;
+  font-size: 12px;
+  text-decoration: none;
+  text-align: center;
+  color: #6a6a6a;
+  background: transparent;
+  bottom: 0;
+  position: relative;
+  cursor: pointer;
+  margin-top: 50px;
+  margin-left: 200px;
+  margin-right:200px;
+
+}
+.readmore:hover{
+   color: black;
+}
+
+.Download{
+  font-family: "PLACE";
+  font-size: 12px;
+  border: none;
+  text-decoration: none;
+  color: #6a6a6a;
+  background: transparent; 
+  bottom: 0;
+  position: relative;
+  cursor: pointer;
+  margin-top: 50px;
+
+}
+.Download:hover{
+    color: black;
+}

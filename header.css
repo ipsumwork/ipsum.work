@@ -1,0 +1,109 @@
+
+
+@font-face {
+  font-family: "PLACE";
+  src: url(https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/PLACE?v=1715433488062);
+}
+
+.preview{
+  font-size: 100px;
+  font-family: "PLACE";
+  margin-top: 0px;
+  margin-bottom: -40px;
+  margin-right: -10px;
+}
+#available{
+  font-size: 12px;
+  font-family: "PLACE";
+  margin-top: -100px;
+  margin-bottom: -40px;
+  margin-left: -80px;
+}
+
+.header-container {
+  display: block;
+  justify-content: left; /* Center horizontally */
+  align-items: left; /* Center vertically */
+  margin-bottom: -1px;
+  position: fixed;
+
+}
+
+.header, .about {
+  width: 20vh;
+  display: block;
+  line-height: normal;
+  background-color: none;
+  justify-content: left;
+  align-items: left;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: -1px;
+  z-index: 1;
+ }
+
+
+.header {
+  width: 130px;
+  height: 10px;
+  border: none;
+  border: none;
+
+
+}
+
+.about {
+  border: none; /* Apply the same border to about */
+
+ 
+}
+
+.contact{
+    color: #6a6a6a;
+    background-color: none;
+}
+.header-text, .about-text{
+  color: black;
+  font-size: 12px;
+  font-family: "PLACE";
+  text-decoration: none;
+}
+
+
+.header-text:hover{
+  color: #6a6a6a;
+  background-color: black;
+
+}
+.dark-mode .header-text:hover{
+  color: white;
+}
+.about-text:hover{
+  color: #6a6a6a;
+  background-color: black;
+}
+.dark-mode .about-text:hover{
+  color: white;
+}
+
+.air{
+  font-family: "Helvetica Neue";
+  padding-bottom: 70px;
+  font-size: 20px;
+  max-width: 100%;
+}
+
+@keyframes moveRightToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.air {
+  animation: moveRightToLeft 5s  linear infinite;
+}
+
