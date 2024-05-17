@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'PLACEMONOEXTENDEDVF';
+  src: url('https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/PLACEMONOEXTENDEDVF.woff2?v=1715956221638') format('woff2'), /* Preferred format */
+       url('https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/PLACEMONOEXTENDEDVF.woff?v=1715956221220') format('woff'),   /* Fallback for older browsers */
+       url('https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/PLACEMONOEXTENDEDVF.ttf?v=1715956220795') format('truetype'); /* Fallback for very old browsers */
+}
 .rectangle{
   position: fixed;
   bottom: 0;
@@ -9,7 +15,7 @@
 }
 
 .footer {
-  font-family: "PLACE";
+  font-family: "PLACEMONOEXTENDEDVF";
   border-top: none;
   background-color: transparent;
   width: 100%;
