@@ -1,43 +1,124 @@
 
+
 @font-face {
-  font-family: "Holes";
-  src: url(https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/Holes?v=1708209436785);
+  font-family: 'PLACEMONOEXTENDEDVF';
+  src: url('https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/PLACEMONOEXTENDEDVF.woff2?v=1715956221638') format('woff2'), /* Preferred format */
+       url('https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/PLACEMONOEXTENDEDVF.woff?v=1715956221220') format('woff'),   /* Fallback for older browsers */
+       url('https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/PLACEMONOEXTENDEDVF.ttf?v=1715956220795') format('truetype'); /* Fallback for very old browsers */
 }
 
 @font-face {
-  font-family: "PLACE";
-  src: url(https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/PLACE?v=1715433488062);
+  font-family: 'HolesmonoVF';
+  src: url('https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/HolesmonoVF.woff2?v=1715956167324') format('woff2'), /* Preferred format */
+     /* Fallback for very old browsers */
 }
 @font-face {
-  font-family: "FORSLA";
-  src: url(https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/FORSLA?v=1713443852670);
+  font-family: 'NYFATMONOVF';
+  src: url('https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/NYFATMONOVF.woff2?v=1715956204659') format('woff2'), /* Preferred format */
+ /* Fallback for very old browsers */
 }
 .fixed-container {
   position: fixed;
   top: 0;
-  height: 2000; 
-  background-color: none;
+  height: 100vh; 
   
 }
 
 .scrollable-content {
-  max-height: 610px; 
-  padding: 180px;
-  padding-top: 20px;
-  width: 900px;
+  max-height: 100%;
+  max-width: 100%;
+  padding: 50px;
+  padding-top: 50px;
+  width: 100vw;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: static;
   align-items: center;
+  box-sizing: border-box;
+  border: 1px solid grey;
+
 }
+@media only screen and (min-width: 390px) {
+  /* Styles for tablets and larger screens */
+  .scrollable-content {
+  max-height: 100%;
+  max-width: 100%;
+  padding: 50px;
+  padding-top: 50px;
+  width: 100vw;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  position: static;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid grey;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* Styles for tablets and larger screens */
+  .scrollable-content {
+  max-height: 100%;
+  max-width: 100%;
+  padding: 50px;
+  padding-top: 50px;
+  width: 100vw;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  position: static;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid grey;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* Styles for larger screens like desktops */
+  .scrollable-content {
+   max-height: 100%;
+  max-width: 100%;
+  padding: 50px;
+  padding-top: 50px;
+  width: 100vw;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  position: static;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid grey;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /* Styles for even larger screens */
+  .scrollable-content {
+    max-height: 100%;
+  max-width: 100%;
+  padding: 50px;
+  padding-top: 50px;
+  width: 100vw;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  position: static;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid grey;
+  }
+}
+
 body {
-  background-color: ;
+  background-color: ; /* Add your background color here */
   margin: 0; 
   padding: 0;
   max-width: 100%;
-  
+  overflow-x: hidden;
+  position: fixed;
 }
+
 
 .dark-mode {
   background-color: black;
@@ -63,29 +144,71 @@ body {
   appearance: none;
   position: fixed;
   top: 10px; 
-  right: 20px; 
+  right: 2wv; 
   border: none;
   right:90px;
-  font-family: "PLACE";
+  font-family: "PLACEMONOEXTENDEDVF";
   font-weight: Regular;
   cursor: pointer;
   user-select: none;
   width: 12px;
   height: 12px;  
-
   }
-
+@media only screen and (min-width: 414px) {
+#ABC{
+  appearance: none;
+  position: fixed;
+  top: 100px; 
+  right: 20px; 
+  border: none;
+  right:90px;
+  font-family: "PLACEMONOEXTENDEDVF";
+  font-weight: Regular;
+  cursor: pointer;
+  user-select: none;
+  width: 12px;
+  height: 12px;  
+  }}
+@media only screen and (min-width: 768px) {
+#ABC{
+  appearance: none;
+  position: fixed;
+  top: 100px; 
+  right: 20px; 
+  border: none;
+  right:90px;
+  font-family: "PLACEMONOEXTENDEDVF";
+  font-weight: Regular;
+  cursor: pointer;
+  user-select: none;
+  width: 12px;
+  height: 12px;  
+  }}
+@media only screen and (min-width: 450px) {
+#ABC{
+  appearance: none;
+  position: fixed;
+  top: 100px; 
+  right: 20px; 
+  border: none;
+  right:90px;
+  font-family: "PLACEMONOEXTENDEDVF";
+  font-weight: Regular;
+  cursor: pointer;
+  user-select: none;
+  width: 12px;
+  height: 12px;  
+  }}
 #ABC:hover{
   font-weight: Bold;
 }
-
 #resetButton{
   position: fixed;
   top: 10px; 
   right: 50px; 
   border: none;
   margin-right: 70px;
-  font-family: "PLACE";
+  font-family: "PLACEMONOEXTENDEDVF";
   font-weight: Regular;
   font-size: 12px;
   cursor: pointer;
@@ -95,6 +218,41 @@ body {
   mix-blend-mode: difference;
   color: #6a6a6a;
   }
+@media only screen and (min-width: 768px) {
+#resetButton{
+  position: fixed;
+  top: 100px; 
+  right: 50px; 
+  border: none;
+  margin-right: 70px;
+  font-family: "PLACEMONOEXTENDEDVF";
+  font-weight: Regular;
+  font-size: 12px;
+  cursor: pointer;
+  user-select: none;
+  height: 15px;
+  background-color: transparent;
+  mix-blend-mode: difference;
+  color: #6a6a6a;
+  }}
+@media only screen and (max-width: 450px) {
+#resetButton{
+  position: fixed;
+  top: 100px; 
+  right: 50px; 
+  border: none;
+  margin-right: 70px;
+  font-family: "PLACEMONOEXTENDEDVF";
+  font-weight: Regular;
+  font-size: 12px;
+  cursor: pointer;
+  user-select: none;
+  height: 15px;
+  background-color: transparent;
+  mix-blend-mode: difference;
+  color: #6a6a6a;
+  }
+}
 
 #resetButton:hover{
   font-weight: Bold;
@@ -119,10 +277,41 @@ body {
   cursor: pointer;
   transition: transform 0.5s ease-in-out;
   transform: rotate(45deg);
+  }
+@media only screen and (min-width: 768px) {
+#darkModeCheckbox {
+  appearance: none;
+  position: fixed;
+  top: 100px;
+  right: 50px; 
+  width: 13px;
+  height: 13px;
+  border: none;
+  border-radius: 50%;
+  background: conic-gradient(black 50%, white 50%);
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+  transform: rotate(45deg);
+  }}
+@media only screen and (max-width: 430px) {
+
+#darkModeCheckbox {
+  appearance: none;
+  position: fixed;
+  top: 100px;
+  right: 50px; 
+  width: 13px;
+  height: 13px;
+  border: none;
+  border-radius: 50%;
+  background: conic-gradient(black 50%, white 50%);
+  cursor: pointer;
+  transition: transform 0.5s ease-in-out;
+  transform: rotate(45deg);
 
  
 }
-
+}
 #darkModeCheckbox:hover {
   transform: rotate(-180deg);
 }
@@ -145,21 +334,45 @@ select {
 }
 
 .typetester {
-  width: calc(90% - 2px); 
+  width: calc(100% - 2px); 
   font-size: 10px;
   font-style: normal;
   text-align: center;
-  font-family: "PLACE";
+  font-family: "PLACEMONOEXTENDEDVF";
   color: #6a6a6a;
   border: none;
   margin-top: 20px;
   position: static;
   z-index: 3;
-  padding: 1px; 
+  padding: 120px; 
   box-sizing: border-box; 
   position: relative;
-}
+  z-index: 2;
+  
 
+}
+@media only screen and (max-width: 450px) {
+.typetester {
+  width: calc(100% - 2px);
+  height: 100%;
+  font-size: 10px;
+  font-style: normal;
+  text-align: center;
+  font-family: "PLACEMONOEXTENDEDVF";
+  color: #6a6a6a;
+  border: none;
+  margin-top: 170px;
+  position: static;
+  z-index: 3;
+  padding: 1px; 
+  margin-bottom: 0px;
+  box-sizing: border-box; 
+  position: relative;
+  
+
+
+}
+}
 .typetester::before,
 .typetester::after {
   content: '';
@@ -211,6 +424,10 @@ select {
   bottom: -1px;
   right: -1px;
 }
+.dark-mode .typetester::before,
+.dark-mode .typetester::after {
+  background-color: white; /* Change color to white in dark mode */
+}
 .slider {
   -webkit-appearance: none;
   position: start;
@@ -226,7 +443,26 @@ select {
   margin-top: 10px;
   margin-bottom: 5px;
   vertical-align:middle;
+
 }
+@media only screen and (max-width: 414px) {.slider {
+  -webkit-appearance: none;
+  position: start;
+  top: 2px;
+  border: 1px solid #6a6a6a;
+  width: 150px;
+  height: 0px;
+  border-radius: 50px;
+  background-color: transparent;
+  outline: none;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  vertical-align:middle;
+  display: none;
+
+  }}
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
@@ -256,7 +492,6 @@ select {
   cursor: pointer;
   transition: background-color 0.15s ease-in-out;
 }
-
 .sample {
   text-align: center;
   padding-top: 10px;
@@ -266,13 +501,50 @@ select {
   border-radius: 20px;
   margin-top: 15px;
   outline: none;
-  font-size: 50px;
   line-height: 100px;
   background-color: transparent;
   transition: font-weight 0.15s ease-in-out;
   color: black;
+  max-height: 100%;
+  
 }
-
+@media only screen and (max-width: 430px) {
+.sample {
+  text-align: center;
+  padding-top: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+  border-radius: 20px;
+  margin-top: 5px;
+  outline: none;
+  font-size:12px;
+  line-height: 100px;
+  background-color: transparent;
+  transition: font-weight 0.15s ease-in-out;
+  color: black;
+  max-height:50%;
+  
+}
+}
+@media only screen and (min-width: 768px) {
+  .sample {
+  text-align: center;
+  padding-top: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  border-radius: 20px;
+  margin-top: 5px;
+  outline: none;
+  font-size: 20px;
+  line-height: 100px;
+  background-color: transparent;
+  transition: font-weight 0.15s ease-in-out;
+  color: black;
+  max-height:50%;
+  
+}
 .sample.dark-mode {
   color: white;
 }
@@ -281,23 +553,23 @@ select {
   outline: none;
   cursor: text;
 }
-
-#Typetester1 .sample {
-  font-family: "PLACE";
+  #Typetester1 .sample {
+  font-family: "PLACEMONOEXTENDEDVF";
   border-radius: 0px;
+  
 }
 
 #Typetester2 .sample {
-  font-family: "Holes";
+  font-family: "HolesmonoVF";
   border-radius: 0px;
 }
 
 
 #Typetester3 .sample {
-  font-family: "FORSLA";
+  font-family: "NYFATMONOVF";
   font-variation-settings: 'slnt' 100, 'opsz' 400; 
   font-variation-settings: 'ital' 100, 'opsz' 400; 
-  font-size: 100px; /* Default font size */
+
 
 }
 
@@ -308,7 +580,7 @@ select {
 }
 
 .readmore{
-  font-family: "PLACE";
+  font-family: "PLACEMONOEXTENDEDVF";
   border: none;
   font-size: 12px;
   text-decoration: none;
@@ -328,7 +600,7 @@ select {
 }
 
 .Download{
-  font-family: "PLACE";
+  font-family: "PLACEMONOEXTENDEDVF";
   font-size: 12px;
   border: none;
   text-decoration: none;

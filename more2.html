@@ -27,77 +27,94 @@
       href="https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/General Sans?v=1698401282395"
     />
           <div class="header">
-            <a
-              class="header-text"
-              href="/index.html"
-              onclick="location.reload();"
-              >00. WORK.IPSUM</a
-            >
-          </div>
-          <div class="about">
-            <a
-              class="about-text"
-              href="/about.html"
-              onclick="location.reload();"
-              >01. ABOUT</a
-            >
-          </div>
-          <div class="about">
-            <a class="about-text" href="/more.html" onclick="location.reload();"
-              >02. CONTACT</a
-            >
-          </div>
-          <div class="about">
-            <a
-              class="about-text"
-              href="/more2.html"
-              onclick="location.reload();"
-              >03. MORE</a
-            >
-          </div>
-    <div class="fixed-container">
-      <div class="scrollable-content">
-        <div class="header-container">
-
-          <div class="Empty"></div>
-          <div class="button-container">
-            <a
-              onclick="toggleDarkMode()"
-              id="darkModeCheckbox"
-              class="custom-button"
-            ></a>
-          </div>
+    <div class="preview">
+      <a id="ipsumwork"></a>
+      <a id="preview">(PREVIEW MODE)</a>
+      <a id="available">AVAILABLE --- -------- (VERY) SOON</a>
+      <div class="header-container">
+        <div class="header">
+          <a class="header-text" href="/index.html" onclick="location.reload();"
+            >00. F0NTS</a
+          >
         </div>
+        <div class="about" id="about">
+          <a class="about-text" href="" onclick="location.reload();"
+            >01. ABOUT</a
+          >
+        </div>
+        <div class="about"  id="contact">
+         
+          <a class="about-text" href="/more2.html" onclick="location.reload();"
+            >03. [CONTACT]</a
+          >
+        </div>
+        <div class="about" id="more">
+          <a class="about-text" href="" onclick="location.reload();"
+            >04. MORE</a
+          >
+          </div>
+          <button id="openOverlayBtn">STAY UPDATED</button>
+
+          <div id="overlay" class="overlay">
+            <div class="overlay-content">
+              <span class="close" id="closeOverlayBtn">&times;</span>
+              <h2>GET UPDATED WHEN FONT IS READY FOR DOWNLOAD</h2>
+              <form
+                action="https://formsubmit.co/529ed8d9f975700d26b63048e0f66860"
+                method="POST"
+              >
+                <input
+                  id="text"
+                  type="text"
+                  name="name"
+                  placeholder="NAME"
+                  required
+                />
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="EMAIL"
+                  required
+                />
+                <input
+                  id="message"
+                  type="message"
+                  name="message"
+                  placeholder="MESSAGE"
+                  required
+                />
+                <button id="submit" type="submit">Send</button>
+              </form>
+            </div>
+          </div>
+        
       </div>
     </div>
+ <div class="linksborder">
+  <div class="links-container">
+    <p class="one">[INFO]</p>
+    <div class="info-dropdown dropdown-content">
+      <a href="mailto:lu.wanelof@gmail.com">FOUNDER: LUDVIG WÄNELÖF (lu.wanelof@gmail.com)</a>
+      <p>CALL: (46)76 852 18 76</p>
+  
+  </div>
 
-    <div class="linksborder">
-      <div class="links-container">
-        <p class="one">(02.1) info</p>
-      </div>
+  <div class="social">
+    <p class="two">[SOCIAL]</p>
+    <div class="social-dropdown dropdown-content">
+      <a href="https://www.instagram.com/wanelof/" target="_blank" rel="noopener noreferrer">WANELOF</a>
+    </div>
+  </div>
 
-        <div class="info">
-          <p id="Ludvig">
-            ludvig wänelöf lu.wanelof@gmail.com (46)76 852 18 76
-          </p>
-        </div>
-        
-         <div class="social">  <p class="two">(02.2) social</p>
-             <a
-              href="https://www.instagram.com/wanelof/" target="_blank" rel="noopener noreferrer"
-              id="social"
-              class="instagram"
-             >wanelof </a>
-        </div>
-         <div class="www">  <p class="three">(02.3) portfolio</p>
-             <a
-              href="https://ludvigwanelof.com/" target="_blank" rel="noopener noreferrer"
-              id="web"
-              class="website"
-             > ludvigwanelof.com </a>
-        </div>
-        </div>
-      
+  <div class="www">
+    <p class="three">[PORTFOLIO]</p>
+    <div class="www-dropdown dropdown-content">
+      <a href="https://ludvigwanelof.com/" target="_blank" rel="noopener noreferrer">// ludvigwanelof.com</a>
+    </div>
+  </div>
+</div>
+    
 
   </body>
   <footer>

@@ -210,5 +210,3 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-  // Add click event listener to overlay to close it when clicked outside
-  overlay.addEventListener("click", closeOverlay);
