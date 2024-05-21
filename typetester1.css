@@ -9,13 +9,17 @@
 
 @font-face {
   font-family: 'HolesmonoVF';
-  src: url('https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/HolesmonoVF.woff2?v=1715956167324') format('woff2'), /* Preferred format */
-     /* Fallback for very old browsers */
+  src: url('https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/HolesmonoVF.woff2?v=1715956167324') format('woff2'), 
+     url('https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/HolesmonoVF.woff?v=1715960965206') format('woff'),   /* Fallback for older browsers */
+       url('https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/HolesmonoVF.ttf?v=1715960964724') format('truetype');
+  
 }
 @font-face {
   font-family: 'NYFATMONOVF';
-  src: url('https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/NYFATMONOVF.woff2?v=1715956204659') format('woff2'), /* Preferred format */
- /* Fallback for very old browsers */
+  src: url('https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/NYFATMONOVF.woff2?v=1715956204659') format('woff2'),
+     url('https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/NYFATMONOVF.woff?v=1715956204215') format('woff'),   /* Fallback for older browsers */
+      url('https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/NYFATMONOVF.ttf?v=171595') format('truetype');/* Preferred format */
+ 
 }
 .fixed-container {
   position: fixed;
