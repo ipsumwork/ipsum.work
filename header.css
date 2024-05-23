@@ -90,13 +90,14 @@
 }
 
 #openOverlayBtn {
-  color: #6a6a6a;
+  color: black;
   border: none;
   padding: 5px 5px;
   font-size: 12px;
   cursor: pointer;
-  background-color: black;
+  background-color: transparent;
   margin-left: 15px;
+  border: 1px solid black;
 }
 @media only screen and (max-width: 450px) {
   #openOverlayBtn {
@@ -108,8 +109,8 @@
   background-color: black;
   }}
 #openOverlayBtn:hover {
-  background-color: darkgrey; 
-  color:black;/* Change the hover background color as needed */
+  background-color: black; 
+  color:#6a6a6a;/* Change the hover background color as needed */
 }
 
 .overlay {
