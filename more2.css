@@ -71,7 +71,18 @@
     font-size: 12px;
 
   }
+@media only screen and (max-width: 800px) {
+  .dropdown-content {
+    display: block;
+    position: relative;
+    background-color: none;
+    min-width: 160px;
+    padding: 30px;
+    z-index: 1;
+    font-family: "PLACEMONOEXTENDEDVF";
+    font-size: 12px;
 
+  }
   .dropdown-content a {
     color: black; /* Set link color */
     text-decoration: none; /* Remove underline */
