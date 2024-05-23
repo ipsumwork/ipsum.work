@@ -42,7 +42,7 @@
 
 }
 .dropdown-content {
-  display: none;
+  display: inline;
   position: relative;
   background-color: none;
   min-width: 160px;
