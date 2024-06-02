@@ -1,6 +1,5 @@
 
-
-  function updateSizeAndLineHeight(newVal, id, valueId) {
+function updateSizeAndLineHeight(newVal, id, valueId) {
   var newFontSize = newVal + "px";
   var newLineHeight = newVal * 1.2 + "px";
   document
@@ -209,4 +208,15 @@ document.addEventListener('DOMContentLoaded', function() {
     overlay.style.display = 'none';
   });
 });
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    document.getElementsByClassName("head-container").style.Height = "300px";
+  } else {
+    document.getElementsByClassName("head-container").style.Height = "500px";
+  }
+}
+
 
