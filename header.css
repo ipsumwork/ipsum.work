@@ -1,92 +1,90 @@
 @font-face {
   font-family: 'PLACEMONOEXTENDEDVF';
-  src: url('https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/PLACEMONOEXTENDEDVF.woff2?v=1715956221638') format('woff2'), /* Preferred format */
-       url('https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/PLACEMONOEXTENDEDVF.woff?v=1715956221220') format('woff'),   /* Fallback for older browsers */
-       url('https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/PLACEMONOEXTENDEDVF.ttf?v=1715956220795') format('truetype'); /* Fallback for very old browsers */
+  src: url('https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/PLACEMONOEXTENDEDVF.woff2?v=1715956221638') format('woff2'),
+       url('https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/PLACEMONOEXTENDEDVF.woff?v=1715956221220') format('woff'),
+       url('https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/PLACEMONOEXTENDEDVF.ttf?v=1715956220795') format('truetype');
 }
 
-.preview{
+.preview {
   font-family: "PLACEMONOEXTENDEDVF";
-   width: 200vw;
+  width: 200vw;
+  padding: 1em;
+  margin-left: 30px;
 
 }
-#preview{
-  font-size: 5vw;
-}
- @media only screen and (max-width: 450px) {
-.preview{
-  font-size:12px;
-  width: 50%;
-  margin-left:10px;
+
+#preview {
+  font-size: 2vw;
+
+  padding: 10px 100% 0px 0px;
+  text-align: left;
+
+
   
-   }}
-
-.header-container {
-  font-family: "PLACEMONOEXTENDEDVF";
-  position: relative; /* Ensure proper stacking context */
-  z-index: 1; /* Ensure header content appears above overlay */
-  display: flex;
-  flex-direction: column; /* Align items from top to bottom */
-  justify-content: space-evenly; /* Evenly distribute space between items */
-  align-items: flex-start; /* Align items to the left */
-  padding: 10px 20px;
-  background-color: none; /* Change the background color as needed */
-  width: 150px;
 }
 
-.header,
-.about {
-  font-size: 12px;
-  position: relative; /* Ensure proper stacking context */
-  z-index: 1; /* Ensure header content appears above overlay */
-  padding: 5px 20px;
-  background-color: #f0f0f0;
-  align-self: flex-start;
-  background-color: transparent;
+#available {
+  display: none;
 }
 
 @media only screen and (max-width: 450px) {
-.header,
-.about {
-  font-size: 12px;
-  position: relative; /* Ensure proper stacking context */
-  z-index: 1; /* Ensure header content appears above overlay */
-  padding: 5px 20px;
-  background-color: #f0f0f0;
-  align-self: flex-start;
-  background-color: transparent;
-  margin-left:1px;
-  }}
-.header-text {
-  text-decoration: none;
-  color: black; /* Change the color as needed */
- 
-}
-.dark-mode.header-text{
-  color: white;
-}
-.header-text:hover {
-  color: #555; /* Change the hover color as needed */
+  .preview {
+    font-size: 12px;
+    width: 50px;
+    margin-left: 10px;
+  }
 }
 
+.header-container {
+  font-family: "PLACEMONOEXTENDEDVF";
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 1em;
+  width: 150px;
+}
+
+.header, .about {
+  font-size: 12px;
+  position: relative;
+  z-index: 1;
+  padding: 5px 0px;
+  align-self: flex-start;
+  width: 200px;
+}
+
+@media only screen and (max-width: 450px) {
+  .header, .about {
+    font-size: 12px;
+    padding: 5px 20px;
+    margin-left: 1px;
+  }
+}
+
+.header-text {
+  text-decoration: none;
+
+}
+
+
+.header-text:hover {
+  color: #555; /* Hover color */
+}
+
+.dark-mode .header-text {
+  color: white; /* Dark mode color */
+}
 
 .about-text {
   text-decoration: none;
-  color: black;
- 
-  /*/* Change the color as needed */
+  color: green; /* Default color */
 }
-#contact{
-  text-decoration: none;
-}
-#about{
-  text-decoration: line-through;
-}
-#more{
-  text-decoration: line-through;
-}
+
 .about-text:hover {
-  color: #555; /* Change the hover color as needed */
+  color: #555; /* Hover color */
 }
 
 #openOverlayBtn {
@@ -98,63 +96,60 @@
   background-color: transparent;
   margin-left: 15px;
   border: 1px solid black;
+
 }
+
 @media only screen and (max-width: 450px) {
   #openOverlayBtn {
-  color: #6a6a6a;
-  border: none;
-  padding: 5px 5px;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: black;
-  }}
+    color: #6a6a6a;
+    padding: 5px 5px;
+    font-size: 16px;
+    background-color: black;
+  }
+}
+
 #openOverlayBtn:hover {
-  background-color: black; 
-  color:#6a6a6a;/* Change the hover background color as needed */
+  background-color: black;
+  color: #6a6a6a;
 }
 
 .overlay {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Center the overlay both vertically and horizontally */
-  width: 350px; /* Adjust the width as needed */
-  height: 350px; /* Adjust the height as needed */
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 350px;
   display: none;
   justify-content: center;
   align-items: center;
   z-index: 9999;
   border: 1px solid black;
-   background-color: white;
+  background-color: white;
 }
-@media only screen and (max-width:450px) {
+
+@media only screen and (max-width: 450px) {
   .overlay {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-  display: none;
-  justify-content:left;
-  align-items: center;
-  z-index: 9999; /* Ensure overlay appears on top of other content */
-}
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
   }
+}
 
 .overlay-content {
   background-color: white;
   padding: 20px;
   border-radius: 5px;
+}
 
-  
-  }
 @media only screen and (max-width: 450px) {
-.overlay-content {
-  background-color: white;
-  padding: 5px;
-  border-radius: 0px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  width: 400px;
-  }}
+  .overlay-content {
+    padding: 5px;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 400px;
+  }
+}
 
 .close {
   position: absolute;
@@ -162,17 +157,19 @@
   right: 10px;
   cursor: pointer;
   font-size: 24px;
-  color: #333; /* Change the close button color as needed */
+  color: #333;
 }
 
 @media only screen and (max-width: 450px) {
   .close {
-    top: 10px; /* Adjust as needed */
-    right: 5px; /* Adjust as needed */
-    font-size: 20px; }}
+    top: 10px;
+    right: 5px;
+    font-size: 20px;
+  }
+}
 
 .close:hover {
-  color: #555; /* Change the hover color as needed */
+  color: #555;
 }
 
 .overlay-content h2 {
@@ -191,26 +188,23 @@ form input[type="message"],
 form button {
   width: 100%;
   padding: 10px;
-  margin-bottom: 10px;
   border: 1px solid black;
   border-radius: 0px;
-  box-sizing: border-box; /* Ensure padding and border are included in width */
+  box-sizing: border-box;
 }
 
 form button {
-  background-color: white; /* Change the button background color as needed */
+  background-color: white;
   color: black;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
   border: 1px solid black;
+  cursor: pointer;
 }
 
 form button:hover {
   background-color: black;
-  color: white/* Change the hover background color as needed */
+  color: white;
 }
+
 /* Default styles */
 .header-container,
 .header,
@@ -222,7 +216,7 @@ form input[type="text"],
 form input[type="email"],
 form input[type="message"],
 form button {
-  color: black; /* Default text color */
+  color: black;
 }
 
 /* Dark mode */
@@ -237,7 +231,7 @@ form button {
 .dark-mode form input[type="email"],
 .dark-mode form input[type="message"],
 .dark-mode form button {
-  color: white; /* Text color in dark mode */
+  color: white;
 }
 
 /* Specific overrides for elements */

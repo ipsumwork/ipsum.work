@@ -4,11 +4,9 @@
     <link rel="stylesheet" href="typetester1.css" />
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="footer.css" />
-        <link rel="stylesheet" href="more2.css" />
-  
+    <link
 
-
-
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
@@ -30,7 +28,7 @@
       <div class="header-container">
         <div class="header">
           <a class="header-text" href="/index.html" onclick="location.reload();"
-            >00. TYPEFACES</a
+            >00. [F0NTS]</a
           >
         </div>
         <div class="about" id="about">
@@ -41,56 +39,97 @@
         <div class="about"  id="contact">
          
           <a class="about-text" href="/more2.html" onclick="location.reload();"
-            >03. [CONTACT]</a
+            >03. CONTACT</a
           >
         </div>
         <div class="about"id="more">
           <a class="about-text" href="" onclick="location.reload();"
-            >04.(COMMING SOON)</a
+            >04. MORE</a
           >
           </div>
+          <button id="openOverlayBtn">GET FONTS</button>
 
-        
-      </div>
-        
-
-            <div class="getintouch">
-              <span class="close" id="closeBtn">&times;</span>
-              <h2>GET IN TOUCH</h2>
+          <div id="overlay" class="overlay">
+            <div class="overlay-content">
+              <span class="close" id="closeOverlayBtn">&times;</span>
+              <h2>GET UPDATED WHEN FONTS ARE READY FOR DOWNLOAD</h2>
               <form
                 action="https://submit-form.com/eB1ADlxDg"
                 method="POST"
               >
                 <input
-                  id="name"
+                  id="text"
                   type="text"
                   name="name"
                   placeholder="NAME"
                   required
                 />
                 <input
-                  id="email-adress"
+                  id="email"
                   type="email"
                   name="email"
                   placeholder="EMAIL"
                   required
                 />
                 <input
-                  id="form"
+                  id="message"
                   type="message"
                   name="message"
                   placeholder="MESSAGE"
                   required
                 />
-                <button id="send" type="submit">SEND</button>
+                <button id="submit" type="submit">Send</button>
               </form>
             </div>
+          </div>
+        
+      </div>
+    </div>
+    <div class="fixed-container">
+      <div class="scrollable-content">
+        
+          <div class="Empty"></div>
+          <div class="button-container">
+            <a
+              onclick="toggleDarkMode()"
+              id="darkModeCheckbox"
+              class="custom-button"
+            ></a>
 
+            <a onclick="toggleColorSample()" id="ABC" class="color"></a>
+
+            <button id="resetButton" onclick="location.reload();">RESET</button>
+ 
+        </div>
+        <div class="air" id="air"></div>
+        <div class="typetester" id="Typetester1">
+          <select onchange="updateFont(this.value, 'Typetester1')">
+            <option value="PLACE">PLACE MONO</option>
+
+
+        <div class="typetester" id="Typetester2">
+          <select onchange="updateFont(this.value, 'Typetester2')">
+            <option value="Holes">HOLES</option>
+          </select>
+
+
+
+
+        <div class="typetester" id="Typetester3">
+
+      
+
+          <div class="sample" contenteditable="true">FORWARD—SLANTED</div>
+          [ID:1713443852670]
+          <button class="readmore" onclick="location.reload();"></button>
+          <a class="Download" href="path/to/your/font-file.ttf" download></a>
+        </div>
 
         <div class="footer">
           Copyright © 2022 — 2024 WORK.IPSUM. All rights reserved.
         </div>
-
+      </div>
+    </div>
 
     <div class="rectangle"></div>
   </body>

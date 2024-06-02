@@ -4,104 +4,105 @@
     <link rel="stylesheet" href="typetester1.css" />
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="footer.css" />
-    <link
-
-    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
     <script src="script.js"></script>
     <link
       href="https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/roboto flex?v=1698354286479"
+      rel="stylesheet"
     />
     <link
       href="https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/tiny?v=1698348044367"
+      rel="stylesheet"
     />
     <link
       href="https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/General Sans?v=1698401282395"
+      rel="stylesheet"
     />
-    <script src="script.js"></script>
     <div class="preview">
       <a id="ipsumwork"></a>
-      <a id="preview">(PREVIEW MODE)</a>
+      <a id="preview">(IPSUM.WORK)</a>
       <a id="available">AVAILABLE FOR DOWNLOAD (VERY) SOON</a>
       <div class="header-container">
-        <div class="header">
+        <div class="header" id="header">
           <a class="header-text" href="/index.html" onclick="location.reload();"
-            >00. [F0NTS]</a
+            >00. [TYPEFACES]</a
           >
         </div>
         <div class="about" id="about">
-          <a class="about-text" href="" onclick="location.reload();"
+          <a class="about-text" href="about.html" onclick="location.reload();"
             >01. ABOUT</a
           >
         </div>
-        <div class="about"  id="contact">
-         
+        <div class="about" id="contact">
           <a class="about-text" href="/more2.html" onclick="location.reload();"
             >03. CONTACT</a
           >
         </div>
-        <div class="about"id="more">
+        <div class="about" id="more">
           <a class="about-text" href="" onclick="location.reload();"
-            >04. MORE</a
+            >04. (COMING SOON)</a
           >
-          </div>
-          <button id="openOverlayBtn">GET FONTS</button>
+        </div>
+        <button id="openOverlayBtn">GET IN TOUCH</button>
 
-          <div id="overlay" class="overlay">
-            <div class="overlay-content">
-              <span class="close" id="closeOverlayBtn">&times;</span>
-              <h2>GET UPDATED WHEN FONTS ARE READY FOR DOWNLOAD</h2>
-              <form
-                action="https://submit-form.com/eB1ADlxDg"
-                method="POST"
-              >
-                <input
-                  id="text"
-                  type="text"
-                  name="name"
-                  placeholder="NAME"
-                  required
-                />
-                <input
-                  id="email"
-                  type="email"
-                  name="email"
-                  placeholder="EMAIL"
-                  required
-                />
-                <input
-                  id="message"
-                  type="message"
-                  name="message"
-                  placeholder="MESSAGE"
-                  required
-                />
-                <button id="submit" type="submit">Send</button>
-              </form>
-            </div>
+        <div id="overlay" class="overlay">
+          <div class="overlay-content">
+            <span class="close" id="closeOverlayBtn">&times;</span>
+            <h2>SEND SOMETHING BLA BLA BLA</h2>
+            <form action="https://submit-form.com/eB1ADlxDg" method="POST">
+              <input
+                id="text"
+                type="text"
+                name="name"
+                placeholder="NAME"
+                required
+              />
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="EMAIL"
+                required
+              />
+              <input
+                id="message"
+                type="message"
+                name="message"
+                placeholder="MESSAGE"
+                required
+              />
+              <button id="submit" type="submit">SEND</button>
+            </form>
           </div>
-        
+        </div>
       </div>
+    </div>
+    <div class="img" id="img"> 
+      <img draggable="false" class="logo1" src="https://cdn.glitch.global/e6627670-f58c-49b5-b720-a7d016535a17/image-7ffe2095-14c1-4d87-b46b-5f688d80503a.webp?v=1716983954959" alt="work.ipsum logotype">
     </div>
     <div class="fixed-container">
       <div class="scrollable-content">
-        
-          <div class="Empty"></div>
-          <div class="button-container">
-            <a
-              onclick="toggleDarkMode()"
-              id="darkModeCheckbox"
-              class="custom-button"
+        <div class="Empty"></div>
+        <div class="button-container">
+          <a
+            onclick="toggleDarkMode()"
+            id="darkModeCheckbox"
+            class="custom-button"
             ></a>
-
-            <a onclick="toggleColorSample()" id="ABC" class="color"></a>
-
-            <button id="resetButton" onclick="location.reload();">RESET</button>
- 
+          <a onclick="toggleColorSample()" id="ABC" class="color"></a>
+          <button id="resetButton" onclick="location.reload();">RESET</button>
         </div>
-        <div class="air" id="air"></div>
+        <div class="head-container">
+          <div id="headertext" contenteditable="true">(alt.)</div>
+        </div>
+        <div class="index">
+          TYPETESTER INDEX: PLACE [ID 1709819978429]  HOLES [ID:1709820171430] FORSLA [ID:1709820171430]
+        </div>
+          <div class="typetester">
+          <div class="nothing"></div>
+        </div>
         <div class="typetester" id="Typetester1">
           <select onchange="updateFont(this.value, 'Typetester1')">
             <option value="PLACE">PLACE MONO</option>
@@ -112,12 +113,11 @@
             id="size1"
             min="10"
             max="400"
-            value="200"
+            value="80"
             oninput="updateSizeAndLineHeight(this.value, 'Typetester1', 'sizeValue1')"
             class="slider"
           />
-          <span id="sizeValue1">200</span>
-
+          <span id="sizeValue1">80</span>
           WEIGHT:
           <input
             type="range"
@@ -129,11 +129,9 @@
             class="slider"
           />
           <span id="weightValue1">400</span>
-
           <div class="sample" contenteditable="true">(PROPERTY TYPOGRAPHY)</div>
           [ID 1709819978429]
-          <button class="readmore" onclick="location.reload();"></button>
-
+          <button class="readmore" href="/place.html">MORE</button>
           <a class="Download" href="path/to/your/font-file.ttf" download></a>
         </div>
         <div class="typetester" id="Typetester2">
@@ -151,7 +149,6 @@
             class="slider"
           />
           <span id="sizeValue2">200</span>
-
           WEIGHT:
           <input
             type="range"
@@ -163,13 +160,11 @@
             class="slider"
           />
           <span id="weightValue2">400</span>
-
           <div class="sample" contenteditable="true">PX.30</div>
           [ID:1709820171430]
           <button class="readmore" onclick="location.reload();"></button>
           <a class="Download" href="path/to/your/font-file.ttf" download></a>
         </div>
-
         <div class="typetester" id="Typetester3">
           <select onchange="updateFont(this.value, 'Typetester3')">
             <option value="General Sans">FORSLA</option>
@@ -185,32 +180,28 @@
             class="slider"
           />
           <span id="sizeValue3">200</span>
-
-          <span id="height3">100</span>
-
           ITALIC:
           <input
             type="range"
-            id="italicSlider3"
+            id="italicSlider"
             min="100"
             max="900"
             value="100"
-            oninput="updateItalic(this.value, 'Typetester3', 'italic3')"
+            oninput="updateItalic(this.value, 'Typetester3', 'italicValue')"
             class="slider"
           />
-          <span id="italic3">100</span>
-
+          <span id="italicValue">100</span>
           SLANT:
           <input
             type="range"
-            id="slantSlider3"
+            id="slantSlider"
             min="100"
             max="900"
             value="100"
-            oninput="updateSlant(this.value, 'Typetester3', 'slant3')"
+            oninput="updateSlant(this.value, 'Typetester3', 'slantValue')"
             class="slider"
           />
-          <span id="slant3">100</span>
+          <span id="slantValue">100</span>
           O/S:
           <input
             type="range"
@@ -222,7 +213,6 @@
             class="slider"
           />
           <span id="osValue3">100</span>
-
           HEIGHT:
           <input
             type="range"
@@ -233,19 +223,16 @@
             oninput="updateRelativexadvance(this.value, 'Typetester3', 'height3')"
             class="slider"
           />
-
           <div class="sample" contenteditable="true">FORWARD—SLANTED</div>
           [ID:1713443852670]
           <button class="readmore" onclick="location.reload();"></button>
           <a class="Download" href="path/to/your/font-file.ttf" download></a>
         </div>
-
         <div class="footer">
           Copyright © 2022 — 2024 WORK.IPSUM. All rights reserved.
         </div>
       </div>
     </div>
-
     <div class="rectangle"></div>
   </body>
 </html>
